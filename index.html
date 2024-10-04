@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF-Brief Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Brief Generator</h1>
+
+        <!-- Empfängeradresse -->
+        <label for="recipientInput">Empfänger Adresse:</label><br>
+        <textarea id="recipientInput" rows="4" cols="50" placeholder="Geben Sie die Empfängeradresse ein..."></textarea><br><br>
+
+        <!-- Text für den Brief -->
+        <label for="textInput">Gib den Text für den Brief ein:</label><br>
+        <textarea id="textInput" rows="10" cols="50" placeholder="Schreiben Sie Ihren Brieftext hier..."></textarea><br><br>
+
+        <!-- Button für PDF-Erstellung -->
+        <button id="generatePDF">PDF generieren</button>
+    </div>
+
+    <!-- Bibliothek für PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
