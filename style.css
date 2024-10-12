@@ -1,5 +1,6 @@
+/* Google Font Rubik verwenden */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Rubik', sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
@@ -16,23 +17,43 @@ body {
     text-align: center;
 }
 
-textarea {
+label {
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    font-family: 'Rubik', sans-serif;
 }
 
 button {
     background-color: #28a745;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Rubik', sans-serif;
 }
 
 button:hover {
     background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    textarea, input[type="text"] {
+        font-size: 14px;
+    }
 }

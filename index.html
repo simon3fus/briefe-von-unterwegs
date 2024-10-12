@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF-Brief Generator</title>
+    <!-- Google Font Rubik einbinden -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Brief Generator</h1>
 
-        <!-- Empfängeradresse -->
-        <label for="recipientInput">Empfänger Adresse:</label><br>
-        <textarea id="recipientInput" rows="4" cols="50" placeholder="Geben Sie die Empfängeradresse ein..."></textarea><br><br>
+        <!-- Absender -->
+        <label for="senderInput">Absender (Name, Adresse):</label><br>
+        <textarea id="senderInput" rows="4" cols="50" placeholder="Geben Sie den Absender ein..."></textarea><br><br>
+
+        <!-- Empfänger -->
+        <label for="recipientInput">Empfänger (Name, Adresse):</label><br>
+        <textarea id="recipientInput" rows="4" cols="50" placeholder="Geben Sie den Empfänger ein..."></textarea><br><br>
+
+        <!-- Betreff -->
+        <label for="subjectInput">Betreff:</label><br>
+        <input type="text" id="subjectInput" placeholder="Geben Sie den Betreff ein..." /><br><br>
 
         <!-- Text für den Brief -->
         <label for="textInput">Gib den Text für den Brief ein:</label><br>
