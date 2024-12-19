@@ -65,13 +65,14 @@ document.getElementById('generatePDF').addEventListener('click', function() {
         currentY += reducedLineHeight;                // Y-Position für nächste Zeile aktualisieren
     });
 
-    // Abschiedsgruß und Name, immer auf der letzten Seite
-    if (currentY + 30 > maxLineY) {
-        doc.addPage();
-        currentY = margin;
-    }
-    doc.text("Mit freundlichen Grüßen,", 20, currentY + 20);
-    doc.text("Ihr Name", 20, currentY + 30);
+//     Abschiedsgruß und Name, immer auf der letzten Seite
+//    if (currentY + 30 > maxLineY) {
+//        doc.addPage();
+//        currentY = margin;
+//    }
+//
+//    doc.text("Mit freundlichen Grüßen,", 20, currentY + 20);
+//    doc.text("Ihr Name", 20, currentY + 30);
 
     // PDF speichern
     doc.save('brief.pdf');
