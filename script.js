@@ -23,7 +23,7 @@ document.getElementById('generatePDF').addEventListener('click', function() {
     const maxLineY = pageHeight - margin; // Maximale Y-Position bevor eine neue Seite erforderlich ist
 
     // Platz für Empfänger und Absender dynamisch berechnen
-    const recipientLines = doc.splitTextToSize(recipient, 180); // Breite für Empfängertext
+    const recipientLines = doc.splitTextToSize(recipient, 150); // Breite für Empfängertext
     const senderLines = doc.splitTextToSize(sender, 80); // Breite für Absendertext
 
     // Empfänger links
@@ -51,7 +51,7 @@ document.getElementById('generatePDF').addEventListener('click', function() {
     currentY += 15;  // Kleiner Abstand nach dem Betreff
 
     // Text wird aufgeteilt in Zeilen, die in die Breite der PDF-Seite passen
-    const textLines = doc.splitTextToSize(text, 280); // Text wird auf breitere Seitenbreite umgebrochen
+    const textLines = doc.splitTextToSize(text, 310); // Text wird auf breitere Seitenbreite umgebrochen
     doc.setFontSize(9);  // Schriftgröße für den normalen Text
     doc.setFont("helvetica", "normal");  // Normaler Text, nicht fett
 
