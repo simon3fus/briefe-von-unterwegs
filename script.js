@@ -18,7 +18,7 @@ document.getElementById('generatePDF').addEventListener('click', function() {
     let currentY = 20;
     const margin = 20;
     const lineHeight = 10;  // Standard Zeilenhöhe
-    const reducedLineHeight = 5;  // Reduzierter Zeilenabstand
+    const reducedLineHeight = 4.5;  // Reduzierter Zeilenabstand
     const pageHeight = doc.internal.pageSize.height;
     const maxLineY = pageHeight - margin; // Maximale Y-Position bevor eine neue Seite erforderlich ist
 
