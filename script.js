@@ -51,7 +51,7 @@ document.getElementById('generatePDF').addEventListener('click', function() {
     currentY += 15;  // Kleiner Abstand nach dem Betreff
 
     // Text wird aufgeteilt in Zeilen, die in die Breite der PDF-Seite passen
-    const textLines = doc.splitTextToSize(text, 460); // Text wird auf breitere Seitenbreite umgebrochen
+    const textLines = doc.splitTextToSize(text, 310); // Text wird auf breitere Seitenbreite umgebrochen
     doc.setFontSize(9);  // Schriftgröße für den normalen Text
     doc.setFont("helvetica", "normal");  // Normaler Text, nicht fett
 
