@@ -27,7 +27,7 @@ document.getElementById('generatePDF').addEventListener('click', function() {
     const senderLines = doc.splitTextToSize(sender, 80); // Breite für Absendertext
 
     // Empfänger links
-    doc.setFontSize(12);  // Gleiche Schriftgröße wie der restliche Text
+    doc.setFontSize(9);  // Gleiche Schriftgröße wie der restliche Text
     doc.text(recipientLines, 20, currentY);
     // Absender rechts
     doc.text(senderLines, 120, currentY);
@@ -39,7 +39,7 @@ document.getElementById('generatePDF').addEventListener('click', function() {
     currentY += maxHeight + 10; // Platz für Empfänger und Absender
 
     // Datum linksbündig, direkt über dem Betreff
-    doc.setFontSize(12); // Gleiche Größe wie der Text
+    doc.setFontSize(9); // Gleiche Größe wie der Text
     doc.text(new Date().toLocaleDateString(), 20, currentY); // Datum linksbündig
 
     // Betreff direkt unter dem Datum, mit nur einer Zeile Abstand
@@ -52,7 +52,7 @@ document.getElementById('generatePDF').addEventListener('click', function() {
 
     // Text wird aufgeteilt in Zeilen, die in die Breite der PDF-Seite passen
     const textLines = doc.splitTextToSize(text, 280); // Text wird auf breitere Seitenbreite umgebrochen
-    doc.setFontSize(12);  // Schriftgröße für den normalen Text
+    doc.setFontSize(9);  // Schriftgröße für den normalen Text
     doc.setFont("helvetica", "normal");  // Normaler Text, nicht fett
 
     // Für jede Textzeile prüfen, ob sie auf die aktuelle Seite passt, sonst neue Seite hinzufügen
